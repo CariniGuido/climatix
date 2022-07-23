@@ -46,4 +46,58 @@ body {
 }
 
 
-  
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+
+
+
+
+
+
+.blur {
+    position: absolute;
+    color: #fefefe;
+    font-family: 'Overpass', sans-serif;
+    font-size: 64px;
+    letter-spacing: 20px;
+    margin: auto;
+    width: 100%;
+    filter: blur(5px);
+    cursor: none;
+    overflow: hidden;
+    text-align: center;
+    z-index: 3;
+}
+
+.focus {
+    position: absolute;
+    color: #fefefe;
+    font-family: 'Overpass', sans-serif;
+    font-size: 64px;
+    letter-spacing: 20px;
+    margin: auto;
+    width: 100%;
+    filter: blur(0px);
+    cursor: none;
+    overflow: hidden;
+    text-align: center;
+    z-index: 2;
+}
+
+.container {
+	
+	height: 80vh;
+	padding-top: 20vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+body {
+	
+	margin: 0;
+	padding: 0;
+	cursor: none;
+}
+cite {
+    margin-top: 50px;
+}
