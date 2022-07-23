@@ -109,6 +109,7 @@ cite {
     #contenedor {
         display: flex;
         flex-direction: column-reverse;
+        margin-top: 10px;
     }
 
     p.blur{
@@ -131,6 +132,8 @@ cite {
         justify-content: center;
         font-size: xx-large;
     }
-
+cite {
+     margin-top: 20px;
+margin: auto;}
 }
     
