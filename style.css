@@ -66,6 +66,7 @@ body {
     overflow: hidden;
     text-align: center;
     z-index: 3;
+    margin-bottom: 160px;
 }
 
 .focus {
@@ -81,6 +82,7 @@ body {
     overflow: hidden;
     text-align: center;
     z-index: 2;
+    margin-bottom: 155px;
 }
 
 .container {
@@ -115,16 +117,19 @@ cite {
      overflow: hidden;
      align-self: stretch;
      padding-top: 10px;
-     margin-top: -690px;
+     margin-top: -450px;
      justify-content: center;
+    
+     
     }
 
     p.focus {
         display: flex;
         align-items: center;
         padding-top: 10px;
-        margin-top: -690px;
+        margin-top: -450px;
         justify-content: center;
+        font-size: xx-large;
     }
 
 }
