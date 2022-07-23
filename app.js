@@ -21,22 +21,21 @@ window.addEventListener('load', () => {
 
             const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&lang=es&appid=eb3171ef01e845b2ade7d52a9184d177&units=metric`
            
-
+ console.log (url)
             fetch(url)
                 .then(response => { return response.json() })
                 .then(data => {
 
-                 console.log(data)
+                console.log(data)
                     let temp = Math.round(data.main.temp)
                     temperaturaValor.textContent = `${temp} °C`
-
+                    
                     let desc = data.weather[0].description
                     temperaturaDescripcion.textContent = desc.toUpperCase()
 
                     ubicacion.textContent = data.name
 
                     vientoVelocidad.textContent = `${data.wind.speed} m/s`
-
 
 
 
@@ -69,10 +68,31 @@ window.addEventListener('load', () => {
                             iconoAnimado.src='animated/cloudy-day-1.svg'
                             console.log('NUBES');
                             break;  
+                            case 'broken clouds':
+                              iconoAnimado.src='animated/cloudy-day-3.svg'
+                              console.log('NUBES');
+                              break;  
+                              case 'Clouds':
+                                iconoAnimado.src='animated/cloudy-day-1.svg'
+                                console.log('NUBES');
+                                break;  
+                                case 'Clouds':
+                                  iconoAnimado.src='animated/cloudy-day-1.svg'
+                                  console.log('NUBES');
+                                  break;  
+                                  case 'Clouds':
+                                    iconoAnimado.src='animated/cloudy-day-1.svg'
+                                    console.log('NUBES');
+                                    break;  
+                            case 'Rain':
+                              iconoAnimado.src='rainy-1.svg'
+                              break;
                         default:
                           iconoAnimado.src='animated/cloudy-day-1.svg'
                           console.log('por defecto');
-                    }
+                   
+                   
+                        }
 
                 })
                 .catch(error => {
