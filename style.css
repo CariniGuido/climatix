@@ -101,3 +101,29 @@ body {
 cite {
     margin-top: 50px;
 }
+
+@media screen and (max-width:800px) {
+
+    #contenedor {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    p.blur{
+      display: flex;
+      align-items: center;
+     overflow: hidden;
+     align-self: stretch;
+     padding-top: 10px;
+     margin-top: -690px
+    }
+
+    p.focus {
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        margin-top: -690px
+    }
+
+}
+    
